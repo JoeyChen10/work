@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 頁首頁尾 */
+.warp{
+    width: 960px;
+    margin: 0 auto;
+    font-family:"微軟正黑體";
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+	background: rgb(241, 241, 241);
+
+}
+.header a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+.header img{
+    width: 28px;
+}
+.fb{
+    padding-right: 10px;
+    color: rgb(18, 27, 146);
+}
+.line{
+    color: rgb(58, 196, 53);
+    padding-right: 18px;
+}
+.header a:hover{
+    color: rgb(143, 143, 143);
+}
+
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.menu li{
+    margin-top: 30px;
+}
+.menu img{
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+
+.menu a{
+    line-height: 25px;
+}
+.menu ul li a{
+    font-size: 25px;
+    color: rgb(6, 70, 6);
+    text-decoration: none;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid transparent; 
+
+}
+.menu ul li a:hover {
+    color: rgb(143, 143, 143);
+    border-bottom:2px solid  rgb(13, 161, 13);
+    background: rgb(230, 255, 223);
+}
+
+.menu>ul>li{
+    float: left;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-open{
+    display: none;
+    position: absolute;
+    background: rgba(227, 255, 236, 0.527);
+    z-index: 11;
+ }
+
+ .footer{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+
+.footer img{
+    width: 180px;
+}
+
+.footer ul{
+    float: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-right: 20px;
+    
+}
+.red{
+    text-decoration: none;
+    color: rgb(179, 8, 8);   
+}
+
+.top{
+    width: 100px;
+    position:fixed;
+    right: 20px;
+    bottom: 0;
+}
+
+/* 首頁 */
+.swiper {
+    position: relative;
+    top:-15px;
+    width: 960px; 
+    z-index: 9;
+  }
+
+  .swiper img{
+    width: 960px;
+}
+
+.banner h2{
+    position: absolute;
+    top: 420px;
+    width: 960px;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.336);
+    padding: 10px 0 10px 0 ;
+    z-index: 10;
+}
+
+.main h3{
+text-align: center;
+margin-top: 100px;
+font-size: 45px;
+font-weight: 600;
+color: rgb(12, 63, 19);
+}
+
+.main ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.main img{
+    width: 100%;
+}
+
+.main li{
+    box-shadow: 3px 3px 10px gray;
+    margin:4px;
+}
+
+ .course h3{
+     margin-top: 100px;
+     margin-bottom: 30px;
+     text-align: center;
+     font-weight: 600;
+     color: rgb(12, 63, 19);
+     font-size: 45px;
+}
+
+.course table{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-bottom: 100px;
+
+}
+.course th{
+    font-weight: 600;
+    background-color: rgb(231, 231, 231);
+    border-top: 1px solid rgb(168, 168, 168);
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding-left: 20px;
+    font-size: 25px;
+}
+.course td{
+    padding-left: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+
+}
+.heightlight{
+    color: rgb(9, 158, 59);
+}
+.contact{
+    background:linear-gradient(#344b0e ,hsl(91, 52%, 36%));
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.contact h4{
+    font-size: 40px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 45px;
+}
+.contact ul{
+    line-height: 23px;
+    margin-left: 560px;
+    color: white;
+}
+.contact li{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.contact input {
+    height: 24px;
+}
+.btn {
+    width: 40px;;
+}
+
+.contact textarea{
+    margin-left: 40px;
+    float: left;
+    width: 360px;
+    height: 230px;
+}
+
+/* 產品 */
+.productList{
+    width: 700px;
+}
+
+.productList li{
+    height: 350px;
+    width: 960px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.productList img{
+    height: 350px;
+    width: 320px;
+    float: left;
+    border-radius:20px;
+    box-shadow:5px 5px 10px rgb(151, 150, 150);
+
+}
+.productList h3{
+    padding:60px 0 0 350px;
+    font-size: 40px;
+    color:rgb(12, 63, 19)
+}
+.productList p{
+    padding:40px 50px 0 350px;
+    font-size: 20px;
+    color:#112908;
+    line-height:32px;
+    
+}
+
+/* 簡介 */
+
+.content h1{
+    background: rgb(245, 255, 246);
+    font-size: 50px;
+    padding: 30px 0 30px 0;
+    text-align:center;
+    margin-bottom: 20px;
+    color:rgb(12, 63, 19)
+}
+.content ul{
+    list-style-type: disc;
+    margin-left: 350px;
+
+}
+.content li{
+    font-size: 25px;
+    margin-bottom:30px;
+    line-height: 35px;
+    color: rgb(12, 63, 19)
+}
+
+.content a{
+    text-decoration: none
+}
+.content a:hover{
+    color:rgb(60, 250, 60)
+}
+
+.thmb{
+   margin-left: 40px;
+}
+.thmb img{
+    margin-bottom: 20px;
+ }
+
+
+/* 評論 */
+.comment{
+    margin:0 0 40px 40px
+}
+.comment h1{
+    background: rgb(245, 255, 246);
+    font-size: 50px;
+    padding: 30px 0 30px 0;
+    text-align:center;
+    margin-bottom: 20px;
+    color:rgb(12, 63, 19)
+}
+
+.comment h2{
+    font-size: 30px;
+    margin-top:35px;
+    line-height: 35px;
+    color: rgb(12, 63, 19)
+}
+.comment p{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(12, 63, 19)
+}
+.is-rating-unfilled {
+    fill-opacity: .33;
+}
